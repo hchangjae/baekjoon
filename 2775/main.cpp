@@ -16,17 +16,17 @@ int main(){
 
     cin >> test_case;
 
-    int k,n,ans;
+    long long k,n,ans;
 
     for(i=0; i<test_case; i++){
 
         cin >> k >> n;
         
         ans = 1;
-        for(j=n+k-1; j>n-1; j--){
+        for(j=k+n; j>k+1; j--){
             ans *= j;
         }
-        for(j=k; j>1; j--){
+        for(j=n-1; j>1; j--){
             ans /= j;
         }
         
